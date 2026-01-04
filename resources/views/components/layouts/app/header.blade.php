@@ -12,8 +12,17 @@
             </a>
 
             <flux:navbar class="-mb-px max-lg:hidden">
+                <flux:navbar.item icon="home" :href="route('home')" :current="request()->routeIs('home')" wire:navigate>
+                    {{ __('Home') }}
+                </flux:navbar.item>
                 <flux:navbar.item icon="layout-grid" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                     {{ __('Dashboard') }}
+                </flux:navbar.item>
+                <flux:navbar.item icon="information-circle" :href="route('about')" :current="request()->routeIs('about')" wire:navigate>
+                    {{ __('About') }}
+                </flux:navbar.item>
+                <flux:navbar.item icon="envelope" :href="route('contact')" :current="request()->routeIs('contact')" wire:navigate>
+                    {{ __('Contact') }}
                 </flux:navbar.item>
             </flux:navbar>
 
@@ -97,9 +106,18 @@
             </a>
 
             <flux:navlist variant="outline">
-                <flux:navlist.group :heading="__('Platform')">
+                <flux:navlist.group :heading="__('Navigation')">
+                    <flux:navlist.item icon="home" :href="route('home')" :current="request()->routeIs('home')" wire:navigate>
+                    {{ __('Home') }}
+                    </flux:navlist.item>
                     <flux:navlist.item icon="layout-grid" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                     {{ __('Dashboard') }}
+                    </flux:navlist.item>
+                    <flux:navlist.item icon="information-circle" :href="route('about')" :current="request()->routeIs('about')" wire:navigate>
+                    {{ __('About') }}
+                    </flux:navlist.item>
+                    <flux:navlist.item icon="envelope" :href="route('contact')" :current="request()->routeIs('contact')" wire:navigate>
+                    {{ __('Contact') }}
                     </flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
