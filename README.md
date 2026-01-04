@@ -21,6 +21,7 @@ A simple and modern sneaker e-commerce website built with Laravel, featuring use
 ## Installation
 
 1. **Clone the repository**
+<<<<<<< HEAD
    ```bash
    git clone <your-repo-url>
    cd sneakerapp11
@@ -54,14 +55,39 @@ A simple and modern sneaker e-commerce website built with Laravel, featuring use
    ```
 
 ## Running the Application
+=======
+   
+   git clone <your-repo-url>
+   cd sneakerapp11
+   2. **Install PHP dependencies**sh
+   composer install
+   3. **Install Node dependencies**
+   npm install
+   
+4. **Build frontend assets**
+   npm run build
+   5. **Set up environment**
+   
+   cp .env.example .env
+   php artisan key:generate
+   6. **Run migrations and seeders**
+   
+   php artisan migrate
+   php artisan db:seed --class=SneakerSeeder
+   ## Running the Application
+>>>>>>> 4d304832cd3e772955440a3ddb8c6f7b0a9f32bf
 
 If using **Herd**, the application should be automatically available at `http://sneakerapp11.test`
 
 For other servers:
+<<<<<<< HEAD
 ```bash
 php artisan serve
 ```
 Then visit `http://localhost:8000`
+=======
+php artisan serveThen visit `http://localhost:8000`
+>>>>>>> 4d304832cd3e772955440a3ddb8c6f7b0a9f32bf
 
 ## Default Login
 
@@ -78,11 +104,15 @@ Then visit `http://localhost:8000`
 ## Development
 
 For development with hot reload:
+<<<<<<< HEAD
 ```bash
 npm run dev
 ```
 
 ## Technologies
+=======
+npm run dev## Technologies
+>>>>>>> 4d304832cd3e772955440a3ddb8c6f7b0a9f32bf
 
 - Laravel 12
 - Laravel Fortify (Authentication)
@@ -94,4 +124,7 @@ npm run dev
 ## License
 
 MIT
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4d304832cd3e772955440a3ddb8c6f7b0a9f32bf
